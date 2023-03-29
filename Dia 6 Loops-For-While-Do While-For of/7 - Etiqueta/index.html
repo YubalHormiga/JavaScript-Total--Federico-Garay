@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas</title>
+  </head>
+  <body>
+    <script>
+      let alto = 4;
+      let ancho = 3;
+      loopExterno: 
+      for (let i = 1; i <= alto; i++) {
+          for (let j = 1; j <= ancho; j++) {
+            document.write(`${i} . ${j} <br>`);
+            if (i === 2 && j === 2) {
+                break loopExterno;
+            }
+        }
+      }
+    </script>
+  </body>
+</html>

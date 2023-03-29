@@ -1,0 +1,33 @@
+
+h1{
+color: blueviolet;
+}
+.principal{
+
+    font-style: italic;
+    font-size: x-large;
+
+}
+h3{
+    text-align: center;
+}
+.adolescencia{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: cadetblue;
+    font-size: larger;
+}
+.enlaces{
+    display: flex;
+    gap: 4px;
+}
+.datos{
+    font-weight: bolder;
+}
+a[href*=".html"]{
+    text-decoration: none;
+    color: blue;
+}
+h3:hover{
+    font-size: x-large;
+    color: red;
+}

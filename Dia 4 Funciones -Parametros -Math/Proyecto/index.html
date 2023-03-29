@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <p>Introduce el primer Valor</p>
+    <input type="text"  id="primerValor">
+    <p>Introduce el segundo Valor</p>
+    <input type="text"  id="segundoValor">
+    <p>Muestra Resultado</p>
+    <input type="text"  id="resultado">
+    
+    <div class="container">
+        <div>
+            <button onclick="sumar()">Suma</button>
+            <button onclick="restar()">Resta</button>
+            <button onclick="multiplicar()">Multiplicacion</button>
+            <button onclick="dividir()">División</button>
+        </div>
+        <div>
+            <button onclick="raizCuadrada()">Raiz Cuadrada</button>
+            <button onclick="potencia()">Potencia</button>
+            <button onclick="valorAbsoluto()">Valor Absoluto</button>
+        </div>
+        <div>
+            <button onclick="random()">Random</button>
+            <button onclick="round()">Round</button>
+            <button onclick="floor()">floor</button>
+            <button onclick="ceil()">Ceil</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

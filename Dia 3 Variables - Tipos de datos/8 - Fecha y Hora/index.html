@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="iniciarReloj()">
+    <input type="number" id="tiempo">
+    <button onclick="comenzar()">Alarma</button>
+    <h1 id="mostrar">00:00:00</h1>
+    <audio  src="Audios/alarma.mp3" id="alarma"></audio>
+
+    <script>
+        let tiempo = document.getElementById('tiempo')
+        let mostrarTiempo = document.getElementById('mostrar')
+        let alarma = document.getElementById('alarma')
+        function comenzar(){
+            setTimeout(()=>{
+                tiempoCumplido()
+            }, 1000 * tiempo.value)
+        }
+        function tiempoCumplido(){
+           
+            mostrarTiempo.style.color = 'red'
+            alarma.play()
+        }
+
+        function iniciarReloj(){
+            setInterval(() => {
+                titac()
+            }, 1000);
+        }
+
+        function titac(){
+            let reloj = new Date()
+            let hora = reloj.getHours()
+            let minutos = reloj.getMinutes()
+            let segundo = String(reloj.getSeconds()).padStart(2,'0')
+            let textoHora = `${hora}:${minutos}:${segundo}`
+            // console.log(textoHora)
+            mostrar.textContent = textoHora
+        }
+
+
+    </script>
+</body>
+</html>

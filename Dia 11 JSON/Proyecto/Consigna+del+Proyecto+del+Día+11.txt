@@ -1,0 +1,24 @@
+Como hemos aprendido el día de hoy,  JSON define un formato para almacenar datos de manera simple y estandarizada, lo que permite transferirlos entre diferentes tecnologías y lenguajes.
+
+Ahora, en el proyecto de hoy, vamos a poner en práctica esta idea, para transferir datos desde un archivo punto json hasta un documento HTML, usando JavaScript.
+
+Imagina que ya existe la página web del Banco de Springfield, y tu eres el encargado de diseñar la parte del sitio que le muestra al usuario la información de su cuenta bancaria personal.
+
+Básicamente las instrucciones son que diseñes la página de cuenta del cliente, que tenga la siguiente estructura:
+
+--------------------------------
+Banco de Springfield
+Springfield, IL
+[Nombre del cliente]
+Nro cuenta: [numero de cuenta]
+[monto dólres] USD
+[monto euros] EUR
+CBU: [Número CBU]
+Abierta:[fecha de apertura]
+--------------------------------
+
+Luego, tomando el archivo JSON que voy a dejarte en los documentos descargables de esta lección, vas a usar el método que prefieras (ya sea Fetch o XmlHttpRequest para obtener sus datos y mostrarlos en el sitio HTML.
+
+Como siempre tendrás el cuestionario que viene a continuación, que es una gran quía para no perderte en el camino, y al que te recomiendo mantener abierto mientras desarrollas tu proyecto, para orientarte sobre los pasos que debes dar, y en la lección que sigue te mostraré mi forma de resolver este proyecto.
+
+Confío en que podrás dar lo mejor de ti, y te espero a continuación para comparar nuestras soluciones.

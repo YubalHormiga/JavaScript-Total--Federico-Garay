@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FETCH</title>
+  </head>
+  <body>
+    <div id="nombre"></div>
+    <script>
+      let datosJson;
+      let url = "persona.json";
+      fetch(url)
+        .then((respuesta) => {
+          return respuesta.json();
+        })
+        .then((salida) => {
+          textoHtml(salida);
+        });
+
+      function textoHtml(salida) {
+        let presentar = document.querySelector("#nombre");
+        let crear = document.createElement("p");
+        crear.textContent = salida.nombre +' '+ salida.edad;
+        presentar.appendChild(crear);
+      }
+    </script>
+  </body>
+</html>

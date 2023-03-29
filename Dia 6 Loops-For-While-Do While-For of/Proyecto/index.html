@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+  </head>
+  <body onload="mostrarCalificaion()">
+    <h1>Notas</h1>
+    <ul id="mostrarNotas"></ul>
+    <button onclick="promedio()" id="promedio">Promedio</button>
+    <p id="mostrarPromedio"></p>
+    <button onclick="notaMasAlta()" id="notaMasAlta ">NotaMasAlta</button>
+    <p id="mostrarMasAlta"></p>
+    <button onclick="aplazo()" id="aplazo">Aplazo</button>
+    <p id="mostrarAplazo"></p>
+    <script>
+      let notas = [3, 5, 7, 8, 2];
+      function mostrarCalificaion() {
+        for (const nota of notas) {
+          let listado = document.querySelector("#mostrarNotas");
+          let mostrarListado = document.createElement("LI");
+          mostrarListado.textContent = nota;
+          listado.appendChild(mostrarListado);
+        }
+      }
+      function promedio() {
+        let mostrar = document.querySelector("#mostrarPromedio");
+        let resultado = 0;
+        for (let i = 0; i < notas.length; i++) {
+          resultado += notas[i];
+          let promedio = resultado / 5;
+          mostrar.textContent = promedio;
+        }
+      }
+      function notaMasAlta() {
+        let mostrarMasAlta = document.querySelector("#mostrarMasAlta");
+        let masAlta = 0;
+        let i = 0;
+        while (i < notas.length) {
+          if (notas[i] > masAlta) {
+            masAlta = notas[i];
+          }
+
+          i++;
+        }
+        mostrarMasAlta.textContent = masAlta
+      }
+
+      function aplazo(){
+        let notaBaja= 'No'
+        let i = 0
+        do {
+          if( notas[i] < 4){
+            notaBaja = 'Si'
+            break
+          }
+          i++
+        } while (notas[i] > notas.length);
+        let mostrarAplazo = document.querySelector('#mostrarAplazo')
+        mostrarAplazo.textContent = notaBaja
+      }
+    </script>
+  </body>
+</html>

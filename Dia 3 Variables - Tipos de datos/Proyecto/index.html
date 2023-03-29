@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Juego</title>
+  </head>
+  <body onload="comenzarCuentaRegresiva()">
+    <h2>Responde lo antes posible <span id="cuentaRegresiva"></span></h2>
+    <p>Cual es la capital de España</p>
+    <input id="respuesta1" type="text" placeholder="Nombre de capital" />
+    <p>Cual es respuestatal de Alemania</p>
+    <input id="respuesta2" type="text" placeholder="Nombre de capital" />
+    <p>Cual es respuestatal Francia</p>
+    <input id="respuesta3" type="text" placeholder="Nombre de capital" />
+    <p>Cual es respuestatal de Inglaterra</p>
+    <input id="respuesta4" type="text" placeholder="Nombre de capital" />
+    <p>Cual es respuestatal de Italia</p>
+    <input id="respuesta5" type="text" placeholder="Nombre de capital" />
+    <div>
+      <button onclick="finalizado()">Finalizado</button><br />
+      <button onclick="volverIntententar()">Intenlo otra vez</button>
+      <audio src="gameover.mp3" id="audioFinal"></audio>
+    </div>
+
+    <script>
+      let tiempoTerminado;
+      let intervaloDeTiempo;
+
+      function comenzarCuentaRegresiva() {
+        tiempoTerminado = setTimeout(() => {
+          tiempoCumplido();
+        }, 30000);
+        intervaloDeTiempo = setInterval(() => {
+          tictac();
+        }, 1000);
+        let segundos = document.getElementById('cuentaRegresiva').textContent = 30
+      }
+
+      function tictac(){
+        let tiempo =  document.getElementById('cuentaRegresiva').textContent
+        document.getElementById('cuentaRegresiva').textContent = tiempo -1
+      }
+
+      function tiempoCumplido(){
+        clearInterval(intervaloDeTiempo)
+        document.getElementById('cuentaRegresiva').value = 0
+        document.getElementById('audioFinal').play()
+        alert('GAME OVER')
+      }
+
+      function finalizado(){
+        clearTimeout(tiempoTerminado)
+        clearInterval(intervaloDeTiempo)
+        let fecha = new Date()
+        let respuesta1 = document.getElementById('respuesta1').value
+        let respuesta2 = document.getElementById('respuesta2').value
+        let respuesta3 = document.getElementById('respuesta3').value
+        let respuesta4 = document.getElementById('respuesta4').value
+        let respuesta5 = document.getElementById('respuesta5').value
+        let mensaje = `${fecha.toLocaleString('es-ES')} ${respuesta1} ${respuesta2} ${respuesta3} ${respuesta4} ${respuesta5}`
+        alert(mensaje)
+      }
+
+      function volverIntententar(){
+        location.reload()
+      }
+    </script>
+  </body>
+</html>

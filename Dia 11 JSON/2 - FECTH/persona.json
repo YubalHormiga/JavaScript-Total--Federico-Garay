@@ -1,0 +1,10 @@
+{
+    "nombre":"Yubal",
+    "edad":47,
+    "estudiante": false,
+    "direccion": {
+        "calle": "avenida siempre viva",
+        "ciudad": "Sprinfiled",
+    "telefono": ["124567515","6320215478"]
+    }
+}

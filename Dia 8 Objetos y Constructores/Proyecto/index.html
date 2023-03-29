@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Proyecto</h1>
+    <div class="container">
+        <div>
+            <label for="legajo">Legajo</label>
+            <input type="text" id="legajo">
+        </div>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido">
+        </div>
+        <div>
+            <label for="date">Fecha Nacimiento</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <label for="cargo">Cargo</label>
+            <input type="text" id="cargo">
+        </div>
+    </div>
+    <button onclick="agregar()">Agregar Empleado</button>
+    <button onclick="listar()">Listar</button>
+    <ul id="mostrarListado">
+
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>

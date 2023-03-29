@@ -1,0 +1,23 @@
+En el proyecto de hoy nos toca poner en práctica lo aprendido sobre programación asíncrona. Para ello, vamos a desarrollar un sitio de Cotizaciones Online que va a mostrar la cotización del dólar en relación al bitcoin, al euro, y al peso argentino (por elegir un país latinoamericano).
+
+Para poder mostrar esa información, nuestro código tendrá que consultar a distintas API externas (servidores) que contienen esa información, para obtener acceder a ella, y mostrarla en nuestro sitio.
+
+No te preocupes, ya que para facilitarte la cosa, te voy a dejar las direcciones de estas 3 APIs en los recursos adicionales a esta lección.
+
+Pero esto no es todo. La consigna de este proyecto consiste en los siguientes puntos:
+
+Primero vas a crear un documento html que muestre las cosas típicas como un logo, un título y los elementos de las cotizaciones, pero que solo contenga las etiquetas de cada elemento sin contenido, es decir vacías, para poder cargar su contenido vía código JavaScript. Lógicamente lo que sí deberás poner en las etiquetas es su ID para que luego lo podamos acceder desde JavaScript, a través de una función que podría llamarse cargarElementos, o algo así. Esto significa que el contenido visual se va a cargar de forma síncrona. 
+
+Luego deberás escribir el código que se encargue de consultar a las API externas (las que te dejé enlazadas en los recursos de la lección), para poder acceder a los 3 datos que necesitas, y para esto vas a aplicar todo lo aprendido en el día de hoy. Puedes hacerlo usando los elementos async/await, y utilizando el método fetch o el objeto XMLHttpRequest, lo que a ti te haga sentir más cómodo. Yo en mi solución voy a aplicar uno para cada promesa, de modo que los veas a todos.
+
+Una vez obtenida esta información, se debe mostrar en nuestra página HTML.
+
+La idea de este proyecto es evidenciar cómo la información externa se carga de manera posterior (asincrónicamente) con respecto al contenido local del sitio, a pesar que ambos están definidos en el mismo código JavaScript. Esto probará cómo el sincronismo afecta en la forma de visualizar la información en nuestra página y los beneficios que eso nos aporta.
+
+Por último, como frutilla del postre, y para resaltar aún más las virtudes del asincronismo, junto a los elementos html que se cargan al momento de abrirse la página en el navegador, vas a incluir una imagen de tipo gif como la que tienes en los recursos de esta lección, que solo sea visible mientras los datos se están procesando, y que desaparezca cuando la información esté completamente cargada. Este recurso ayuda a los usuarios a tolerar la espera, y también tienen un componente asincrónico ya que se pueden cargar al mismo tiempo que se procesan las demás operaciones.
+
+Todo un desafío. ¿difícil? Puede ser. ¿imposible? De ninguna manera. Ya tienes todo lo necesario para lograrlo. De todos modos, y como siempre, podrás abrir el cuestionario que viene a continuación e ir siguiendo los pasos de este exigente desafío que te estoy planteando. Recuerda tenerlo abierto, e ir tildando las consignas que vas completando.
+
+También espero verte en el próximo video, donde te muestro mi solución, porque lo hagas como lo hagas, siempre hay más para aprender cuando vemos trabajar a otros.
+
+Música fuerte, buenas luces, lindo ambiente, paz interior, y a programar.

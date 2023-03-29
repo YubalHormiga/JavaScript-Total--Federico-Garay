@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <script>
+      function avanzaFila(callback) {
+        setTimeout(function () {
+          console.log("Tu turno ha llegado");
+          callback();
+        }, 5000);
+      }
+      function mujerTeLLama() {
+        console.log("Mujer te llama");
+      }
+      console.log("LLegas a la fila");
+      console.log("Vas a comprar café");
+      avanzaFila(mujerTeLLama());
+      ///////*****Ejemplo//////
+      function test(callback) {
+        setTimeout(function () {
+            console.log('despues de 2sg')
+        }, 2000);
+      }
+
+      function imprimir(mensaje) {
+        console.log(mensaje);
+      }
+      test(imprimir("Hola mundo"));
+    </script>
+  </body>
+</html>

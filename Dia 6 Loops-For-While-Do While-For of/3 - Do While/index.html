@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While</title>
+  </head>
+  <body>
+    <script>
+      //*Siempre se imprime por lo menos una vez
+      let vidas = 5;
+      do {
+        console.log(`Vidas: ${vidas}`);
+        vidas--;
+      } while (vidas > 10);
+
+      let nombre;
+      do {
+        nombre = prompt("Dime tu nombre");
+      } while (nombre != "Yubal");
+      function testLoop(numero) {
+        let tabla = 1;
+        do {
+          console.log(numero*tabla);
+          tabla++;
+        } while (tabla < 11);
+      }
+    </script>
+  </body>
+</html>

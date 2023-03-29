@@ -1,0 +1,23 @@
+Hoy hemos dado nuestros primeros pasos en JavaScript y vamos a ponernos a prueba.
+
+Para poner en práctica lo aprendido, te propongo desarollar un ¡juego! Este consiste en que el jugador responda ciertas preguntas de interes general mientras una cuenta regresiva indica cuanto tiempo le queda antes de perder.
+
+El juego en cuestión, consiste de los siguientes items:
+
+• La pagina debe contar con 5 preguntas, cada una de ellas con su respectiva caja de texto para que el jugador ingrese su respuesta. Puedes inventar las preguntas que tu quieras.
+
+• Al final de la pagina, debe exisitr un botón Finalizar que el jugador presionará al contestar todas las preguntas. Este botón, va a tomar cada una de las respuestas y las mostrara en un mensaje en pantalla (alert), junto con la fecha de hoy.
+
+• Cuando se cargue la pagina (onload), debe comenzar a correr una cuenta regresiva (30 seg), que al cumplirse el tiempo debe mostrar un mensaje de Game Over junto con un audio que indique el final del juego. Esta cuenta regresiva debe verse en pantalla, asi el jugador puede visualizar como decrece segundo a segundo.
+
+Para que la solución sea óptima, te dejo algunos puntos extras:
+
+• Si el jugador consigue finalizar el juego a tiempo, la cuenta regresiva debe detenerse ya que en caso contrario va a aparecer el mensaje de Game Over equivocadamente. Luego te ayudaré a resolver este punto.
+
+• Agregar un botón 'Volver a intentar', que volverá a cargar la página haciendo que se reinicie el juego. El código para recargar la página es el siguiente: location.reload();
+
+• Si te animás, ¡podes agregarle estilos CSS a tu juego!
+
+Este proyecto tiene cierto grado de complejidad, así que te aconsejo tomarte tiempo para pensar y releer el enunciado, y basarte en la guía de trabajo que encontrarás al finalizar esta lección ya que te brindara un paso a paso que te resultará muy útil. Entonces el próximo paso es que abras ese cuestionario, y sigas las indicaciones de apoyo.
+
+Yo me voy a desarrollar mi juego, y te espero al final del día.

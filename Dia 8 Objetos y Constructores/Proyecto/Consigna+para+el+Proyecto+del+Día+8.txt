@@ -1,0 +1,11 @@
+Hoy te propongo desarrollar un registro de empleados, donde cada empleado tiene los siguientes atributos: Legajo, Nombre, Apellido, Fecha de nacimiento y Cargo.
+
+El proyecto consiste en una página HTML donde un usuario pueda ingresar estos cinco datos de cada empleado en sus correspondientes inputs, y luego un botón para agregar esos datos del empleado a un array que va a almacenarlos a todos.
+
+Por supuesto deberás desarrollar un constructor con parámetros para el objeto Empleado, que utilizaremos para crear cada instancia de los empleados que se vayan agregando.
+
+Además, al final de la página vamos a agregar un botón más que va a servir para listar todos los empleados contenidos en el array y mostrarlo en un alert. La idea es utilizar un ciclo For In para poder mostrar a cada empleado, junto con el nombre de las propiedades que contiene, y sus valores.
+
+A continuación cuantas con el cuestionario paso a paso, donde te dejo algunos tips extras para resolver este proyecto. Te recomiendo comenzar por ahí y mantenerlo siempre abierto a medida que vas desarrollando tu proyecto.
+
+¡Mucha suerte y nos vemos del otro lado!

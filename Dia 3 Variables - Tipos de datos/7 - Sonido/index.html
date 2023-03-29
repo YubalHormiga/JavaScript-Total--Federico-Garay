@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+</head>
+<body>
+    <input type="number" id="tiempo">
+    <button onclick="comenzar()">Alarma</button>
+    <h1 id="mostrar">Apagado</h1>
+    <audio  src="Audios/alarma.mp3" id="alarma"></audio>
+
+    <script>
+        let tiempo = document.getElementById('tiempo')
+        let mostrarTiempo = document.getElementById('mostrar')
+        let alarma = document.getElementById('alarma')
+        function comenzar(){
+            setTimeout(()=>{
+                tiempoCumplido()
+            }, 1000 * tiempo.value)
+        }
+        function tiempoCumplido(){
+            mostrarTiempo.textContent = 'Tiempo Cumplido'
+            mostrarTiempo.style.color = 'red'
+            alarma.play()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+Soluciones a los Ejercicios Prácticos del Día 3
+Soluciones a las Prácticas del Día 3
+
+
+Antes de dar por finalizadas las prácticas del día de hoy y pasar al proyecto, te comparto las posibles soluciones para cada una de las prácticas que fueron propuestas el día de hoy, en caso de que hayas tenido alguna dificultad para terminarlas.
+
+¡Ten en cuenta que estas soluciones no son únicas! Si has arribado por otro camino a un código que arroja un resultado correcto en VS Code o tu editor de código preferido, quiero que sepas que has hecho un buen trabajo (no siempre pueden contemplarse todos los casos a la hora de evaluar una tarea).
+
+
+
+Práctica: Ingresos de usuario 1
+
+<!DOCTYPE html>
+    <head>
+        <title>Ingresos de usuario 1</title>
+    </head>
+    <body>
+        <input type="text" id="inputTexto">
+        <button onclick="mostrarTexto()">Click aqui</button>
+    </body>
+</html>
+
+
+Práctica: Ingresos de usuario 2
+ingresosUsuario2.js
+
+function mostrarTexto() {
+    var texto = document.getElementById("inputTexto").value;
+    alert(texto);
+}
+
+
+Práctica: Variables 1
+
+let pelicula = "Pulp Fiction";
+let hora = "21:00";
+ 
+function test() {
+    alert("La funcion de " + pelicula + " es a las " + hora);
+}
+
+
+Práctica: Variables 2
+
+let fruta = "manzanas";
+let precio = "100";
+ 
+function test() {
+    alert("Las " + fruta + " cuestan $" + precio);
+}
+
+
+Práctica: Tipos de datos 1
+
+let num1 = 15;
+let num2 = 16;
+ 
+let num3 = num1 + num2;
+
+
+Práctica: Tipos de datos 2
+
+let frutas = ['manzanas', 'bananas', 'naranjas'];
+ 
+let dato2 = frutas[1];
+
+
+Práctica: Mostrar ingresos de usuario 1
+index.js
+
+function mostrarTexto() {
+    var texto = document.getElementById("inputTexto").value;
+    document.getElementById("titulo").textContent = texto;
+}
+
+
+Práctica: Mostrar ingresos de usuario 2
+index.js
+
+function mostrarTexto() {
+    var texto = document.getElementById("inputTexto").value;
+    document.getElementById("titulo").textContent = "Mi artista favorito es " + texto;
+}
+
+
+Práctica: Temporizador 1
+
+setTimeout(function() { alert("Se acabo el tiempo") }, 5000);
+
+
+Práctica: Temporizador 2
+
+setTimeout(function() { alert("Se acabo el tiempo") }, 10000);
+
+
+Práctica: Audio 1
+
+<!DOCTYPE html>
+    <head>
+        <title>Audio 1</title>
+    </head>
+    <body>
+        <audio id="audioAlarma">
+            <source src="alarma.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+</html>
+
+
+Práctica: Audio 2
+index.js
+
+function test() {
+    var audio = document.getElementById('audioAlarma');
+    audio.play();
+}
+
+
+Práctica: Fecha y hora 1
+
+function mostrarFecha() {
+    var fecha = new Date();
+    alert(fecha.toLocaleDateString('es-ES'));
+}
+
+
+Práctica: Fecha y hora 2
+
+setInterval(test, 1000);
+ 
+function test() {
+    console.log("+1 segundo");
+}

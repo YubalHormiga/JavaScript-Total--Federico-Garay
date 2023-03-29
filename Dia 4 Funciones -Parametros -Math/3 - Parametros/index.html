@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros</title>
+</head>
+<body>
+    <p>Primer numero</p>
+    <input type="number" id="primerNumero">
+    <p>Segundo numero</p>
+    <input type="number" id="segundoNumero">
+
+    <button onclick="mostrarResultado()" s>Mostra Resultado</button>
+    <h3 id="mostrar" ></h3>
+
+    <script>
+
+        function sumar(numero1, numero2) {
+          resultado = numero1 + numero2
+          return resultado;
+       
+        }
+
+        function mostrarResultado(){
+            let numero1 = Number(document.querySelector('#primerNumero').value)
+            let numero2 = Number(document.querySelector('#segundoNumero').value)
+            let mostrar = document.querySelector('#mostrar')
+            let suma = sumar(numero1, numero2)
+            mostrar.textContent = suma
+        }
+        
+
+    </script>
+</body>
+</html>

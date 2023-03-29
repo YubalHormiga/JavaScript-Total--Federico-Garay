@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Ingresa tu nombre</p>
+    <input type="text" id="nombreDeUsuario" />
+    <button onclick="mostrarNombre()">Ingresar</button>
+    <h1 id="salida">No sé tu nombre</h1>
+
+    <script>
+        function mostrarNombre(){
+            let nombreUsuario = document.querySelector('#nombreDeUsuario').value
+            let elementoTexto = document.querySelector('#salida')
+            let mensaje = `Tu nombre es ${nombreUsuario}`
+            elementoTexto.textContent = mensaje
+            console.log(nombreUsuario)
+        }
+    </script>
+  </body>
+</html>

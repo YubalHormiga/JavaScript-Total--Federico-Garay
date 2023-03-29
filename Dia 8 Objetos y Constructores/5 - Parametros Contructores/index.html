@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This</title>
+  </head>
+  <body>
+    <script>
+      function Perro(raza,edad){
+        this.patas = 4;
+        this.raza = raza
+        this.edad = edad
+        this.ladrar = function(){
+          console.log('guau')
+        }
+      }
+
+      let lua = new Perro('pequines', 5)
+
+      function Empleado(nombre, apellido, edad, cargo){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.cargo = cargo
+        this.saludar = function(){
+          console.log(` Mi nombre es ${nombre} ${apellido} tengo ${edad} y soy ${cargo}`)
+        }
+      }
+
+      let empleado1 = new Empleado('Yubal', 'Hormiga', 47, 'oficial')
+      
+    </script>
+  </body>
+</html>

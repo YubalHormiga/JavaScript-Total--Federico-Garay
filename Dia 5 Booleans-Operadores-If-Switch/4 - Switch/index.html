@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <p>Elige una de las opciones</p>
+    <ol>
+        <li>Mazana</li>
+        <li>Pera</li>
+        <li>Platano</li>
+        <li>Sandia</li>
+    </ol>
+    <input type="number" id="fruta" min="1" max="4">
+    <button onclick="precio()">Enviar</button>
+    <h3 id="precio"></h3>
+
+
+    <script>
+
+  function precio(){
+    let respuesta = document.querySelector('#precio')
+    let elementoFruta = document.querySelector('#fruta')
+    let fruta = elementoFruta.value
+
+    switch (fruta) {
+        case '1':
+            respuesta.textContent = 1
+            break;
+    
+        case '2':
+            respuesta.textContent = 2
+            break;
+    
+        case '3':
+            respuesta.textContent = 3
+            break;
+    
+        case '4':
+            respuesta.textContent = 4
+            break;
+    
+        default:
+            break;
+    }
+  }
+
+    </script>
+</body>
+</html>

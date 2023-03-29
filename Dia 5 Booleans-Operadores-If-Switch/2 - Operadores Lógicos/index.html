@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores</title>
+  </head>
+  <body>
+    <p>Ingresa edad</p>
+    <input type="number" id="edad" />
+    <button onclick="calcular()">Enviar</button>
+    <h2>Puede beber alcohol?</h2>
+    <p id="beber"></p>
+    <h2>Puede ingresar a fiesta?</h2>
+    <p id="fiesta"></p>
+
+    <script>
+      function calcular() {
+        let edad = document.querySelector("#edad").value;
+        let beber = document.querySelector("#beber");
+        let fiesta = document.querySelector("#fiesta");
+        let entrada = document.querySelector("#entrada");
+
+        let puedeBeber = edad >= 18;
+
+        beber.textContent = puedeBeber;
+
+        let puedeentrarfiesta = edad >= 18 && edad <= 30;
+
+        fiesta.textContent = puedeentrarfiesta;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop for</title>
+  </head>
+
+  <p>Introduce el numero</p>
+  <input type="number" id="numero" />
+  <button onclick="multiplicar()">Multiplicar</button>
+  <ol id="resultado"></ol>
+  <body>
+    <script>
+      function multiplicar() {
+        let numero = Number(document.querySelector("#numero").value);
+        let resultado = document.querySelector("#resultado");
+        for (let i = 1; i <= 10; i++) {
+          let lista = document.createElement("li");
+          let calculo = numero * i;
+          lista.textContent = ` El resultado de ${numero} x 
+        ${i} es ${calculo} `;
+          resultado.appendChild(lista);
+        }
+      }
+    </script>
+  </body>
+</html>
